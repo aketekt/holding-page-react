@@ -1,39 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(50px, auto);
+  
+
+}
+
+
+.main {
+  padding: 15px;
+  width: 100%;
+  float: left;
+  grid-column: 1 / 1;
+  grid-row: 1;
+}
+.covert {
+  padding: 15px;
+  width: 100%;
+  float: left;
+  grid-column: 1 / 1;
+  grid-row: 2;
+}
+
 body {
   margin:0;
   padding: 0;
-  font-family: 'Oswald', sans-serif;
-  background-image: url("./images/jeremy-perkins-271697.jpg");
+  font-family: 'Quicksand', sans-serif;
+  background-color: white;
   text-align: center;
-  font-family: 'Oswald', sans-serif;
-  color: white;
-}
-.container {
- margin: 0;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-      width: 80%; 
+ 
+  color: black;
 }
 h1 {
   font-size: 9em;
-  color: white;
-  font-family: 'Oswald', sans-serif;
+  color: black;
+  
+    font-family: 'Quicksand', sans-serif;
+
     padding: 0.3em;
     font-weight: 700;
 }
 p {
-  font-size: 1.4em;
+  font-size: 1.2em;
   line-height: 2em;
-  padding: 1.5em;
+  
   font-weight:200;
   font-family: 'Raleway', sans-serif;
 }
 .btn {
   display: inline-block;
   font-weight: 700;
-  background-color: #d10303;
-  color: black;
+  background-color: #EC1C23;
+  color: white;
   font-weight: 200;
   font-size: 1.5em;
 }
@@ -44,8 +67,7 @@ p {
   box-shadow: 0px 0px 2px #6ad103;
 }
 .form-control {
-  border: 1px solid white;
-  background-color: #181818;
+  border: 1px solid black;
   text-align: center;
   font-weight: 200;
   font-family: 'Raleway', sans-serif;
@@ -53,11 +75,9 @@ p {
   display: inline-block;
   width: 60%;
   height: 2em;
-  color: white;
   margin: 1em 0 2.3em 0;
 }
 .form-control:focus {
-  border: 1px solid #FF0000;
-  border-color: #FF0000;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.005), 0 0 8px rgba(255, 0, 0, 0.3);
+  border: 1px solid #1465AB;
+  border-color: #1465AB;
 }
